@@ -58,6 +58,7 @@ class BarajaObjetoTest(unittest.TestCase):
 
         jugadas = b.repartir(5,3)
         self.assertEqual(len(jugadas),3)
+        self.assertEqual(len(b.naipes),25)
         self.assertEqual(jugadas[0], ['Ao', '4o', '7o','Ro','3c'])
         self.assertEqual(jugadas[1], ['2o', '5o', 'So','Ac','4c'])
         self.assertEqual(jugadas[2], ['3o', '6o', 'Co','2c','5c'])
