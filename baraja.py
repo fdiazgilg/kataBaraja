@@ -49,11 +49,10 @@ class Baraja():
         for i in range(jugadores):
             jugadas.append([])
             for j in range(mano):
-                jugadas[i].append(self.naipes[j*2+i])
+                jugadas[i].append(self.naipes[j*jugadores+i])
+        
+        cartas = mano * jugadores
+        self.naipes = self.naipes[cartas:]
+
         return jugadas
-    
-            
-
-
-
 
