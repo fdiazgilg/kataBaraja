@@ -29,8 +29,8 @@ class Baraja():
 
     def __init__(self):
         self.naipes = []
-        for palo in _palos:
-            for carta in _cartas:
+        for palo in self.__palos:
+            for carta in self.__cartas:
                 self.naipes.append(carta+palo)
     
     def elige_carta(self, i):
