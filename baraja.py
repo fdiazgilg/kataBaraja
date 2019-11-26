@@ -39,7 +39,7 @@ class Baraja():
 
     def mezclar(self):
         for i in range(len(self.naipes)):
-            al_azar = self.elige_carta(i, len(self.naipes))
+            al_azar = self.elige_carta(i)
             aux = self.naipes[i]
             self.naipes[i] = self.naipes[al_azar]
             self.naipes[al_azar] = aux
